@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro-SC 实验室 - 首页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 使用相同的样式文件 style.css，确保中英文页面风格一致 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Neuro-SC Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">发表成果</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">资源共享</a></li>
+                    <li class="nav-item"><a class="nav-link" href="people.html">团队成员</a></li>
+                    <!-- 链接到单独的页面 -->
+                    <li class="nav-item"><a class="nav-link" href="joinus.html">加入我们</a></li>
+                    <!-- 切换到英文首页 -->
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light btn-sm mt-1" href="en_index.html">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 (Hero Section) -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Neuro-SC 实验室：神经科学单细胞组学研究室</h1>
+            <p class="lead mt-3">探索神经系统发育和疾病中的细胞异质性及调控网络。</p>
+            <div class="mt-4">
+                <!-- 已移除“加入我们的团队”按钮 -->
+                <a href="publications.html" class="btn btn-primary btn-lg">查看最新成果</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 研究方向 -->
+        <section class="mb-5">
+            <h2 class="section-title">主要研究方向</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-3">
+                        <h4>🔬 单细胞技术</h4>
+                        <p class="text-muted">利用 scRNA-seq、scATAC-seq 和空间转录组学技术，绘制高分辨率神经细胞图谱。</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-3">
+                        <h4>🧠 发育与疾病</h4>
+                        <p class="text-muted">研究神经干细胞分化过程，以及阿尔茨海默病等神经退行性疾病的病理基础。</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-3">
+                        <h4>💻 生物信息学</h4>
+                        <p class="text-muted">开发基于 R (Tidyverse) 和 Python 的计算方法，用于整合多模态组学数据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 最新动态 -->
+        <section class="mb-5">
+            <h2 class="section-title">实验室动态</h2>
+            <div class="row">
+                <!-- 新闻卡片 1 -->
+                <div class="col-md-6 mb-3">
+                    <div class="card shadow-sm border-0 bg-white h-100">
+                        <div class="news-card-body card-body">
+                            <div class="news-content">
+                                <h5 class="card-title text-primary">🎉 [2025年11月15日] 恭喜！实验室获得国家自然科学基金项目资助！</h5>
+                                <p class="card-text small text-muted">该项目将聚焦于神经炎症中星形胶质细胞异质性的调控机制研究。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- 新闻卡片 2：可点击的论文新闻卡片，链接到 publications.html -->
+                <div class="col-md-6 mb-3">
+                    <a href="publications.html" class="text-decoration-none text-dark h-100 d-block">
+                        <div class="card shadow-sm border-0 bg-white h-100">
+                            <div class="news-card-body card-body">
+                                <div class="news-content">
+                                    <h5 class="card-title">📚 [2025年10月01日] 最新研究论文在 *Nature Neuroscience* 上发表</h5>
+                                    <p class="card-text small text-muted">我们的研究首次揭示了灵长类动物早期皮层发育过程中的表观遗传动态变化。</p>
+                                </div>
+                                <!-- 封面图位置 - 在大屏幕上会与文字左右分布 -->
+                                <img src="assets/news/NN_GraphicalAbstract.jpg" alt="Nature Neuroscience 论文封面" class="news-image d-none d-sm-block" onerror="this.onerror=null;this.src='https://placehold.co/120x150/1a237e/ffffff?text=COVER'">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 可以在这里添加更多新闻卡片，它们会自动排成两列 -->
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer class="text-center mt-5"><div class="container"><p>© 2025 Neuro-SC Lab</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

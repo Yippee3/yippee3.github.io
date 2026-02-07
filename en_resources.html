@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Code | Neuro-SC Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="en_index.html">Neuro-SC Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="en_index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="en_publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="en_resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="en_people.html">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="en_joinus.html">JOIN US</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light btn-sm mt-1" href="resources.html">中文</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h2 class="section-title">Code and Computational Resources</h2>
+        <p class="lead">Here you can find open-source software and data resources developed by the Neuro-SC Lab to facilitate single-cell omics analysis.</p>
+
+        <!-- Software Section -->
+        <section class="mb-5">
+            <h3 class="mt-4 text-primary">Software Packages</h3>
+            
+            <!-- SCORPION -->
+            <div class="card shadow-sm mb-3 border-0 bg-white">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-microchip me-2"></i>SCORPION (Spatial-Cell Omics R-based Pipeline for Integration)
+                    </h5>
+                    <p class="card-text small text-muted">A comprehensive R package built on the Tidyverse framework for robust and reproducible integration of single-cell RNA-seq and Spatial Transcriptomics datasets.</p>
+                    <p class="card-text small">
+                        <span class="fw-bold">Reference:</span> Student A, Your Name, Ph.D. (2023). <em>Genome Biology</em>.
+                    </p>
+                    <a href="https://github.com/placeholder/SCORPION" target="_blank" class="btn btn-sm btn-dark me-2">
+                        <i class="fab fa-github me-1"></i> GitHub Repository
+                    </a>
+                    <a href="en_publications.html#scorpion" class="btn btn-sm btn-outline-secondary">
+                        <i class="fas fa-scroll me-1"></i> View Publication
+                    </a>
+                </div>
+            </div>
+
+            <!-- Microglia Classifier -->
+            <div class="card shadow-sm mb-3 border-0 bg-white">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-brain me-2"></i>Microglia Subtype Classifier (Python)
+                    </h5>
+                    <p class="card-text small text-muted">A Python utility using machine learning models (Random Forest/XGBoost) to classify microglial cell states (e.g., homeostatic, DAM, inflammatory) based on scRNA-seq profiles.</p>
+                    <p class="card-text small">
+                        <span class="fw-bold">Reference:</span> Student B, Your Name, Ph.D. (2024). <em>Cell</em>.
+                    </p>
+                    <a href="https://github.com/placeholder/MicrogliaClassifier" target="_blank" class="btn btn-sm btn-dark me-2">
+                        <i class="fab fa-github me-1"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Data Section -->
+        <section class="mb-5">
+            <h3 class="mt-4 text-primary">Datasets</h3>
+            
+            <p>Raw and processed data from our major publications are deposited in public repositories, with links provided below.</p>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Primate Cortical Development scATAC/scRNA-seq Data (2025)
+                    <span>
+                        <a href="https://www.ncbi.nlm.nih.gov/geo/placeholder" target="_blank" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-database me-1"></i> GEO Accession: GSEXXXXX
+                        </a>
+                    </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Human AD Microglia scRNA-seq Atlas (2024)
+                    <span>
+                        <a href="https://www.ncbi.nlm.nih.gov/geo/placeholder" target="_blank" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-database me-1"></i> GEO Accession: GSEYYYYY
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </section>
+        
+    </div>
+
+    <footer class="text-center mt-5"><div class="container"><p>© 2025 Neuro-SC Lab</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

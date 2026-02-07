@@ -1,0 +1,160 @@
+/* Global Styles for Neuro-SC Lab Website */
+
+:root {
+    --primary-color: #1a237e; /* 深靛蓝 (Deep Indigo) - 专业学术风格 */
+    --accent-color: #ffc107;  /* 琥珀色 (Amber) - 用于强调 */
+    --text-color: #333;       /* 主要文字颜色 */
+    --light-bg: #f8f9fa;      /* 浅灰背景 */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    padding-top: 56px; /* 为固定导航栏留出空间 */
+    line-height: 1.6;
+}
+
+/* --- 导航栏样式 (Custom Navbar) --- */
+.navbar-custom {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+/* --- 首页横幅 (Hero Section) --- */
+.hero-section {
+    /* 背景图：深蓝色渐变 + 神经科学相关背景。请将下面的 URL 替换为您在 assets/general/ 文件夹下的实际图片路径 */
+    background: linear-gradient(rgba(26, 35, 126, 0.05), rgba(26, 35, 126, 0.8)), url('assets/general/hero_background.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 120px 0; /* 增加上下边距以突出背景图片 */
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-section p.lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* --- 通用标题样式 (Section Titles) --- */
+.section-title {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* --- 实验动态图片样式 (Newspaper Card Image Styles) --- */
+/* 使用 flexbox 布局卡片内容，使图片和文字并排 */
+.news-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* 确保在大屏幕上不换行，保持左右分布 */
+}
+
+/* 文字内容容器：占据剩余所有空间，并在右侧留出间距 */
+.news-content {
+    flex-grow: 1; 
+    padding-right: 20px; 
+}
+
+/* 封面图样式 */
+.news-image {
+    width: 120px; /* 图片固定宽度 */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0; /* 确保图片不被压缩 */
+}
+
+/* 适配小屏幕：强制堆叠显示，让图片在下方（默认行为） */
+@media (max-width: 768px) {
+    .news-card-body {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .news-content {
+        padding-right: 0; /* 堆叠时移除右侧填充 */
+    }
+    .news-image {
+        width: 100%;
+        max-width: 200px; 
+        margin: 15px 0 0 0; /* 调整图片与文字的间距 */
+    }
+}
+
+
+/* --- 团队成员页样式 (People Page Styles) --- */
+.pi-card {
+    border-top: 5px solid var(--primary-color);
+    background-color: #fff;
+}
+
+/* 头像样式修复：方形圆角 + 完整显示 */
+.profile-img {
+    width: 180px;       /* 固定宽度 */
+    height: 180px;      /* 固定高度 */
+    /* object-fit: cover;  <-- 已将此行注释掉或移除 */
+    object-fit: contain; /* 确保图片完全显示，不被裁剪，可能会有留白 */
+    
+    /* border-radius: 5px; <-- 5px 小圆角（方形） */
+    /* border: 4px solid #fff;  <-- 移除白色边框 */
+    /*box-shadow: 0 4px 6px rgba(0,0,0,0.15); <-- 可选：添加轻微阴影 */
+    /* background-color: #f0f0f0; <-- 图片加载前的背景色 */
+}
+
+/* 卡片悬停效果 */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none; /* 移除默认边框，使用阴影 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 虚线边框卡片 (用于招聘/加入我们) */
+.card.border-dashed {
+    border: 2px dashed #ccc !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+.card.border-dashed:hover {
+    border-color: var(--primary-color) !important;
+    background-color: #e8f0fe;
+}
+
+/* --- 页脚 (Footer) --- */
+footer {
+    padding: 40px 0;
+    background-color: #343a40;
+    color: #adb5bd;
+    margin-top: 60px;
+}
