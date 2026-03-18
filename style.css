@@ -79,8 +79,8 @@ body {
 
 /* 文字内容容器：占据剩余所有空间，并在右侧留出间距 */
 .news-content {
-    flex-grow: 1; 
-    padding-right: 20px; 
+    flex-grow: 1;
+    padding-right: 20px;
 }
 
 /* 封面图样式 */
@@ -95,7 +95,7 @@ body {
 /* 适配小屏幕：强制堆叠显示，让图片在下方（默认行为） */
 @media (max-width: 768px) {
     .news-card-body {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
     }
     .news-content {
@@ -103,7 +103,7 @@ body {
     }
     .news-image {
         width: 100%;
-        max-width: 200px; 
+        max-width: 200px;
         margin: 15px 0 0 0; /* 调整图片与文字的间距 */
     }
 }
@@ -121,7 +121,7 @@ body {
     height: 180px;      /* 固定高度 */
     /* object-fit: cover;  <-- 已将此行注释掉或移除 */
     object-fit: contain; /* 确保图片完全显示，不被裁剪，可能会有留白 */
-    
+
     /* border-radius: 5px; <-- 5px 小圆角（方形） */
     /* border: 4px solid #fff;  <-- 移除白色边框 */
     /*box-shadow: 0 4px 6px rgba(0,0,0,0.15); <-- 可选：添加轻微阴影 */
@@ -149,6 +149,28 @@ body {
 .card.border-dashed:hover {
     border-color: var(--primary-color) !important;
     background-color: #e8f0fe;
+}
+
+/* --- 资源页新增链接列表样式 --- */
+.tutorial-links .list-group-item {
+    border: 1px solid #e9ecef;
+}
+
+.tutorial-links .list-group-item strong {
+    color: var(--primary-color);
+}
+
+.tutorial-links .list-group-item:hover {
+    background-color: #f4f7ff;
+}
+
+
+@media (max-width: 576px) {
+    .tutorial-links .list-group-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 6px;
+    }
 }
 
 /* --- 页脚 (Footer) --- */
