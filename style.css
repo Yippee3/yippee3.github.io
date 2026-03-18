@@ -164,6 +164,15 @@ body {
     background-color: #f4f7ff;
 }
 
+
+@media (max-width: 576px) {
+    .tutorial-links .list-group-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 6px;
+    }
+}
+
 /* --- 页脚 (Footer) --- */
 footer {
     padding: 40px 0;
